@@ -10,13 +10,21 @@ export const Play = ({addNewGameResult}) => {
         nav(-1);
     }
 
+    const lost = () => {
+        addNewGameResult(false);
+        nav(-1)
+    }
+
     return (
         <>
         <h2>Play</h2>
         <Button
             onClick={won}
         >I WON</Button>
-        <Button>I LOST</Button>
+        
+        <Button
+            onClick={lost}
+        >I LOST</Button>
         </>
 
     );
