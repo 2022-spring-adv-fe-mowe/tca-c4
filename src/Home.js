@@ -8,6 +8,7 @@ export const Home = ({gameResults}) => {
     return (
         <>
         <h2>Home</h2>
+        <h3>Total game played: {gameResults.length} </h3>
         <Button
             onClick = {()=>nav("/play")}
 
