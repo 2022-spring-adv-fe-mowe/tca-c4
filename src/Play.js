@@ -17,12 +17,18 @@ export const Play = ({addNewGameResult}) => {
 
     return (
         <>
+        <h1>&#128308; Connect 4 &#128993;</h1>
+        <br/>
         <h2>Play</h2>
         <Button
+            variant="outlined"
+            style={{ color: "white" }}
             onClick={won}
         >I WON</Button>
         
         <Button
+            variant="outlined"
+            style={{ color: "white" }}
             onClick={lost}
         >I LOST</Button>
         </>
