@@ -11,9 +11,13 @@ export const Home = ({gameResults}) => {
     const winCount = gameResults.filter(n => n == true).length;
     console.log(winCount);
    
-    const loseCount = gameResults.length - winCount
+    const loseCount = gameResults.length - winCount;
 
-    const myWinningPersentage = ((winCount / gameResults.length)*100).toFixed(2) 
+    let myWinningPersentage = ((winCount / gameResults.length)*100).toFixed(2);
+    myWinningPersentage = isNaN(myWinningPersentage) ? 0 : Number(myWinningPersentage);
+
+
+
 
     return (
         <>
