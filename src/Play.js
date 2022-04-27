@@ -19,7 +19,7 @@ export const Play = ({addNewGameResult}) => {
         <>
         <h1>&#128308; Connect 4 &#128993;</h1>
         <br/>
-        <h2>Play</h2>
+        <h2>Play!</h2>
         <Button
             variant="outlined"
             style={{ color: "white" }}
@@ -31,6 +31,18 @@ export const Play = ({addNewGameResult}) => {
             style={{ color: "white" }}
             onClick={lost}
         >I LOST</Button>
+
+        <h1
+        id="tokens"
+        >
+        &#128993;    
+        &#128308;     
+        <br/>
+        &#128308; 
+        &#128993;
+        </h1>
+    
+
         </>
 
     );
